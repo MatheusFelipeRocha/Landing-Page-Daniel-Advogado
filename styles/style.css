@@ -238,7 +238,7 @@ h3 {
        HERO
     ════════════════════════════════ */
 .hero {
-  background: linear-gradient(135deg, var(--verde) 0%, var(--marinho) 100%);
+  background: linear-gradient(135deg, var(--verde) 0%, var(--marinho) 30%);
   color: #fff;
   padding: 4.5rem 0 3.5rem;
   position: relative;
@@ -436,7 +436,7 @@ h3 {
     ════════════════════════════════ */
 .depoimentos {
   padding: 4rem 0;
-  background: linear-gradient(135deg, var(--verde), var(--marinho) 150%);
+  background: linear-gradient(135deg, var(--verde), var(--marinho) 50%);
   color: #fff;
 }
 .depoimentos .section-header {
