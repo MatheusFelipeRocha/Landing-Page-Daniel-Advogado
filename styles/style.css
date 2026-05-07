@@ -238,7 +238,7 @@ h3 {
        HERO
     ════════════════════════════════ */
 .hero {
-  background: var(--marinho);
+  background: linear-gradient(135deg, var(--verde) 0%, var(--marinho) 100%);
   color: #fff;
   padding: 4.5rem 0 3.5rem;
   position: relative;
