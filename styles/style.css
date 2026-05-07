@@ -29,7 +29,7 @@ body {
 }
 
 .sobre-foto {
-  background-image: url(./images/Daniel\ foto\ teste\ .jpeg);
+  background-image: url(../images/Daniel\ foto\ teste\ .jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
