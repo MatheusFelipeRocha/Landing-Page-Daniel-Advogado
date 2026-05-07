@@ -581,8 +581,11 @@ h3 {
   transform: translateY(-3px);
 }
 .card-blog-img {
-  height: 140px;
-  background: linear-gradient(135deg, var(--verde) 0%, var(--marinho) 100%);
+  height: 210px;
+  background-image: url(../images/Justice_Blueprint_page-0001.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
