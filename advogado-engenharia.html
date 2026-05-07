@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Daniel Filipe Brito — Advocacia em Engenharia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./images/Favicon-Daniel_Felipe.jpeg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ══ NAVBAR ══ -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-logo">
+          Dr. Daniel Filipe Brito Martins
+          <span>Advocacia · Direito de Engenharia</span>
+        </div>
+        <ul class="navbar-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li>
+            <a
+              href="#contato"
+              class="btn btn-primary"
+              style="padding: 0.5rem 1.2rem; font-size: 0.85rem"
+              >Fale comigo</a
+            >
+          </li>
+        </ul>
+        <!-- JS: hamburguer toggle (veja no script) -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <!-- Menu mobile — fica oculto até o botão ser clicado -->
+      <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="#sobre" onclick="fecharMenu()">Sobre</a></li>
+        <li><a href="#servicos" onclick="fecharMenu()">Serviços</a></li>
+        <li><a href="#depoimentos" onclick="fecharMenu()">Depoimentos</a></li>
+        <li><a href="#blog" onclick="fecharMenu()">Blog</a></li>
+        <li><a href="#contato" onclick="fecharMenu()">Fale comigo</a></li>
+      </ul>
+    </nav>
+
+    <!-- ══ HERO ══ -->
+    <section class="hero">
+      <div class="container">
+        <span class="tag hero-tag">Advocacia Especializada</span>
+        <h1>Direito aplicado<br />à Engenharia</h1>
+        <p>
+          Assessoria jurídica para engenheiros, construtoras e empresas do setor
+          de infraestrutura. Proteja seus contratos, evite litígios e atue com
+          segurança.
+        </p>
+        <div class="hero-btns">
+          <a href="#contato" class="btn btn-primary">Agendar consulta</a>
+          <a
+            href="#servicos"
+            class="btn btn-secondary"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
+            >Ver serviços</a
+          >
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-item">
+            <strong>+120</strong>
+            <span>Clientes atendidos</span>
+          </div>
+          <div class="hero-badge-item">
+            <strong>8 anos</strong>
+            <span>De experiência</span>
+          </div>
+          <div class="hero-badge-item">
+            <strong>98%</strong>
+            <span>Satisfação</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SOBRE ══ -->
+    <section class="sobre" id="sobre">
+      <div class="container">
+        <div class="sobre-grid">
+          <div class="sobre-foto"></div>
+          <div class="fade-in">
+            <span class="tag">Quem sou eu</span>
+            <h2>Advocacia com precisão técnica</h2>
+            <p>
+              Sou advogado com especialização no cruzamento entre o Direito e a
+              Engenharia. Atuo em contratos de obra, responsabilidade civil de
+              engenheiros, laudos periciais e disputas em licitações.
+            </p>
+            <p>
+              Meu objetivo é simples: oferecer segurança jurídica real para quem
+              constrói e transforma o país.
+            </p>
+            <div class="sobre-chips">
+              <span class="chip">Contratos de Obra</span>
+              <span class="chip">Perícia Judicial</span>
+              <span class="chip">Licitações</span>
+              <span class="chip">Responsabilidade Civil</span>
+              <span class="chip">Direito Ambiental</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SERVIÇOS ══ -->
+    <section class="servicos" id="servicos">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="tag">O que faço</span>
+          <h2>Serviços</h2>
+          <p>Soluções jurídicas sob medida para o setor de engenharia</p>
+        </div>
+        <div class="servicos-grid">
+          <div class="card-servico fade-in">
+            <div class="card-icon">⚖️</div>
+            <h3>Contratos de Obra</h3>
+            <p>
+              Elaboração, revisão e negociação de contratos de empreitada,
+              subempreitada e fornecimento de materiais.
+            </p>
+          </div>
+          <div class="card-servico fade-in">
+            <div class="card-icon">🏗️</div>
+            <h3>Disputas em Licitação</h3>
+            <p>
+              Recursos administrativos, impugnações e representações em
+              processos licitatórios públicos e privados.
+            </p>
+          </div>
+          <div class="card-servico fade-in">
+            <div class="card-icon">📋</div>
+            <h3>Laudos Periciais</h3>
+            <p>
+              Assistência técnica jurídica em perícias de engenharia civil e
+              assessoria em ações indenizatórias.
+            </p>
+          </div>
+          <div class="card-servico fade-in">
+            <div class="card-icon">🛡️</div>
+            <h3>Responsabilidade Civil</h3>
+            <p>
+              Defesa de engenheiros e construtoras em ações por vícios, falhas
+              construtivas e acidentes de obra.
+            </p>
+          </div>
+          <div class="card-servico fade-in">
+            <div class="card-icon">🌿</div>
+            <h3>Licenciamento Ambiental</h3>
+            <p>
+              Orientação jurídica para obtenção de licenças e adequação
+              ambiental de empreendimentos.
+            </p>
+          </div>
+          <div class="card-servico fade-in">
+            <div class="card-icon">🤝</div>
+            <h3>Consultoria Preventiva</h3>
+            <p>
+              Análise de riscos contratuais e compliance jurídico para empresas
+              do setor de construção civil.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ DEPOIMENTOS ══ -->
+    <section class="depoimentos" id="depoimentos">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="tag">Depoimentos</span>
+          <h2 style="color: #fff">O que dizem meus clientes</h2>
+          <p>
+            Histórias reais de quem teve segurança jurídica com meu trabalho
+          </p>
+        </div>
+
+        <!-- JS: o carrossel controla qual card está visível -->
+        <div class="carousel-wrapper fade-in">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="card-depoimento">
+              <div class="depo-stars">★★★★★</div>
+              <p class="depo-texto">
+                "Contratei o Dr. Daniel para revisar um contrato de empreitada e
+                ele identificou cláusulas abusivas que poderiam ter nos custado
+                caro. Profissional extremamente técnico e atencioso."
+              </p>
+              <div class="depo-autor">
+                <div class="depo-avatar">RC</div>
+                <div>
+                  <div class="depo-autor-nome">Ricardo C.</div>
+                  <div class="depo-autor-cargo">
+                    Engenheiro Civil · Goiânia, GO
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-depoimento">
+              <div class="depo-stars">★★★★★</div>
+              <p class="depo-texto">
+                "Precisávamos de assessoria em uma licitação pública e o suporte
+                foi fundamental. Ganhamos o recurso e o contrato. Recomendo sem
+                hesitar."
+              </p>
+              <div class="depo-autor">
+                <div class="depo-avatar">AM</div>
+                <div>
+                  <div class="depo-autor-nome">Ana M.</div>
+                  <div class="depo-autor-cargo">
+                    Diretora · Construtora Valve
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-depoimento">
+              <div class="depo-stars">★★★★★</div>
+              <p class="depo-texto">
+                "Fui acionado judicialmente por um suposto vício construtivo.
+                Com a defesa do Dr. Daniel e um laudo pericial bem fundamentado,
+                o processo foi encerrado a meu favor."
+              </p>
+              <div class="depo-autor">
+                <div class="depo-avatar">FT</div>
+                <div>
+                  <div class="depo-autor-nome">Felipe T.</div>
+                  <div class="depo-autor-cargo">Arquiteto e Construtor</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="btnAnterior" aria-label="Anterior">
+            &#8592;
+          </button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn" id="btnProximo" aria-label="Próximo">
+            &#8594;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ BLOG ══ -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="tag">Blog</span>
+          <h2>Artigos e Notícias</h2>
+          <p>Atualidades jurídicas para o setor de engenharia</p>
+        </div>
+        <div class="blog-grid">
+          <a href="#" class="card-blog fade-in">
+            <div class="card-blog-img">⚖️</div>
+            <div class="card-blog-body">
+              <div class="card-blog-cat">Contratos</div>
+              <h3>
+                O que todo engenheiro precisa saber antes de assinar um contrato
+                de obra
+              </h3>
+              <p>
+                Cláusulas que protegem — ou expõem — o profissional no dia a dia
+                das obras.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="card-blog fade-in">
+            <div class="card-blog-img">🏛️</div>
+            <div class="card-blog-body">
+              <div class="card-blog-cat">Licitações</div>
+              <h3>
+                Nova Lei de Licitações: impactos para construtoras e prestadores
+                de serviço
+              </h3>
+              <p>
+                Entenda as principais mudanças e como se adaptar para continuar
+                competindo.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="blog-link fade-in">
+          <a href="#" class="btn btn-secondary">Ver todos os artigos →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CTA / CONTATO ══ -->
+    <section class="cta" id="contato">
+      <div class="container fade-in">
+        <span class="tag" style="color: #a0d4c8; border-color: #a0d4c8"
+          >Contato</span
+        >
+        <h2>Pronto para proteger<br />seu negócio?</h2>
+        <p>Agende uma conversa sem compromisso. Vamos entender o seu caso.</p>
+        <div
+          style="
+            display: flex;
+            gap: 0.85rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a
+            href="https://wa.me/5562995669803"
+            class="btn btn-white"
+            target="_blank"
+            >WhatsApp</a
+          >
+          <a
+            href="mailto:contato@advogado.com.br"
+            class="btn btn-secondary"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+      <p>© 2025 Dr. Daniel FIlipe — Todos os direitos reservados</p>
+      <p style="margin-top: 0.4rem">
+        Desenvolvido por Matheus Felipe —
+        <a href="#">Todos os Direitos Reservados</a>
+      </p>
+    </footer>
+
+    <!-- ════════════════════════════════════════════════
+       JAVASCRIPT — comentado para fins didáticos
+  ════════════════════════════════════════════════ -->
+    <script>
+      /* ──────────────────────────────────────────
+       1. MENU HAMBURGUER (mobile)
+       O que faz: ao clicar no botão ☰, adiciona
+       ou remove a classe "open" nos elementos.
+       O CSS cuida da animação — o JS só diz
+       "está aberto" ou "está fechado".
+    ────────────────────────────────────────── */
+
+      // Pegamos os dois elementos pelo ID que colocamos no HTML
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      hamburger.addEventListener("click", function () {
+        // classList.toggle adiciona a classe se não existe, remove se já existe
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+
+      // Função chamada ao clicar em qualquer link do menu mobile
+      // (para fechar o menu após navegar para a seção)
+      function fecharMenu() {
+        hamburger.classList.remove("open");
+        mobileMenu.classList.remove("open");
+      }
+
+      /* ──────────────────────────────────────────
+       2. CARROSSEL DE DEPOIMENTOS
+       O que faz: controla qual card está visível
+       movendo a "faixa" (track) com translate CSS.
+
+       Lógica:
+       - Temos N cards, cada um com largura 100%
+       - Mover para o card 0 = translateX(0%)
+       - Mover para o card 1 = translateX(-100%)
+       - Mover para o card 2 = translateX(-200%)
+    ────────────────────────────────────────── */
+
+      const track = document.getElementById("carouselTrack");
+      const btnAnterior = document.getElementById("btnAnterior");
+      const btnProximo = document.getElementById("btnProximo");
+      const dotsContainer = document.getElementById("carouselDots");
+
+      // Quantos cards existem dentro do track
+      const totalCards = track.children.length;
+      let cardAtual = 1; // começa no primeiro card
+
+      // Cria um "bolinha" (dot) para cada card
+      for (let i = 0; i < totalCards; i++) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        if (i === 0) dot.classList.add("active"); // primeira dot ativa
+        dot.addEventListener("click", () => irParaCard(i)); // clique direto na dot
+        dotsContainer.appendChild(dot);
+      }
+
+      function irParaCard(indice) {
+        cardAtual = indice;
+        // Move a faixa: cada card tem 100% de largura
+        track.style.transform = `translateX(-${cardAtual * 100}%)`;
+        // Atualiza as bolinhas
+        document.querySelectorAll(".dot").forEach((d, i) => {
+          d.classList.toggle("active", i === cardAtual);
+        });
+      }
+
+      // Botão "próximo" — avança um card (volta ao início se chegar no fim)
+      btnProximo.addEventListener("click", function () {
+        const proximo = (cardAtual + 1) % totalCards;
+        irParaCard(proximo);
+      });
+
+      // Botão "anterior" — volta um card (vai ao último se estiver no início)
+      btnAnterior.addEventListener("click", function () {
+        const anterior = (cardAtual - 1 + totalCards) % totalCards;
+        irParaCard(anterior);
+      });
+
+      // Autoplay a cada 5 segundos
+      setInterval(() => {
+        const proximo = (cardAtual + 1) % totalCards;
+        irParaCard(proximo);
+      }, 5000);
+
+      /* ──────────────────────────────────────────
+       3. ANIMAÇÕES AO ROLAR (IntersectionObserver)
+       O que faz: observa cada elemento com a
+       classe "fade-in". Quando ele entra na tela,
+       adiciona a classe "visible" — aí o CSS
+       faz o elemento aparecer com transição.
+
+       IntersectionObserver é a forma moderna e
+       performática de detectar scroll — sem
+       ficar escutando o evento "scroll" 60x/seg.
+    ────────────────────────────────────────── */
+
+      // Criamos o "observador"
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            // entry.isIntersecting = true quando o elemento está visível na tela
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // para de observar após animar (eficiência)
+            }
+          });
+        },
+        { threshold: 0.15 }, // dispara quando 15% do elemento está visível
+      );
+
+      // Aplicamos o observer em todos os elementos com classe "fade-in"
+      document.querySelectorAll(".fade-in").forEach(function (el) {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
