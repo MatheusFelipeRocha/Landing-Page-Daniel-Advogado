@@ -436,7 +436,7 @@ h3 {
     ════════════════════════════════ */
 .depoimentos {
   padding: 4rem 0;
-  background: var(--marinho);
+  background: linear-gradient(135deg, var(--verde), var(--marinho));
   color: #fff;
 }
 .depoimentos .section-header {
