@@ -17,15 +17,17 @@
     <!-- ══ NAVBAR ══ -->
     <nav class="navbar">
       <div class="container">
-        <div class="navbar-logo">
-          Dr. Daniel Filipe Brito Martins
-          <span>Advocacia · Direito de Engenharia</span>
-        </div>
+        <a href="#">
+          <div class="navbar-logo">
+            Dr. Daniel Filipe Brito Martins
+            <span>Advocacia · Direito de Engenharia</span>
+          </div></a
+        >
         <ul class="navbar-links">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="artigos.html">Blog</a></li>
           <li>
             <a
               href="#contato"
@@ -35,17 +37,15 @@
             >
           </li>
         </ul>
-        <!-- JS: hamburguer toggle (veja no script) -->
         <button class="hamburger" id="hamburger" aria-label="Abrir menu">
           <span></span><span></span><span></span>
         </button>
       </div>
-      <!-- Menu mobile — fica oculto até o botão ser clicado -->
       <ul class="mobile-menu" id="mobileMenu">
         <li><a href="#sobre" onclick="fecharMenu()">Sobre</a></li>
         <li><a href="#servicos" onclick="fecharMenu()">Serviços</a></li>
         <li><a href="#depoimentos" onclick="fecharMenu()">Depoimentos</a></li>
-        <li><a href="#blog" onclick="fecharMenu()">Blog</a></li>
+        <li><a href="artigos.html" onclick="fecharMenu()">Blog</a></li>
         <li><a href="#contato" onclick="fecharMenu()">Fale comigo</a></li>
       </ul>
     </nav>
@@ -187,8 +187,6 @@
             Histórias reais de quem teve segurança jurídica com meu trabalho
           </p>
         </div>
-
-        <!-- JS: o carrossel controla qual card está visível -->
         <div class="carousel-wrapper fade-in">
           <div class="carousel-track" id="carouselTrack">
             <div class="card-depoimento">
@@ -208,7 +206,6 @@
                 </div>
               </div>
             </div>
-
             <div class="card-depoimento">
               <div class="depo-stars">★★★★★</div>
               <p class="depo-texto">
@@ -226,7 +223,6 @@
                 </div>
               </div>
             </div>
-
             <div class="card-depoimento">
               <div class="depo-stars">★★★★★</div>
               <p class="depo-texto">
@@ -244,7 +240,6 @@
             </div>
           </div>
         </div>
-
         <div class="carousel-controls">
           <button class="carousel-btn" id="btnAnterior" aria-label="Anterior">
             &#8592;
@@ -266,37 +261,39 @@
           <p>Atualidades jurídicas para o setor de engenharia</p>
         </div>
         <div class="blog-grid">
-          <a href="#" class="card-blog fade-in">
-            <div class="card-blog-img"></div>
+          <a href="artigos.html" class="card-blog fade-in">
+            <div class="card-blog-img">
+              <img src="./images/Marcos_Eirelli.jpg" alt="" />
+            </div>
             <div class="card-blog-body">
-              <div class="card-blog-cat">Contratos</div>
+              <div class="card-blog-cat">Empreendedorismo</div>
               <h3>
-                O que todo engenheiro precisa saber antes de assinar um contrato
-                de obra
+                De EIRELI para SLU: O que muda na prática para a sua empresa?
               </h3>
               <p>
-                Cláusulas que protegem — ou expõem — o profissional no dia a dia
-                das obras.
+                As novas regras da Lei nº 14.195/2021 que garantem
+                responsabilidade limitada sem a exigência de capital social
+                mínimo.
               </p>
             </div>
           </a>
-          <a href="#" class="card-blog fade-in">
+          <a href="artigos.html" class="card-blog fade-in">
             <div class="card-blog-img"></div>
             <div class="card-blog-body">
               <div class="card-blog-cat">Licitações</div>
-              <h3>
-                Nova Lei de Licitações: impactos para construtoras e prestadores
-                de serviço
-              </h3>
+              <h3>Em breve, novos conteúdos especializados</h3>
               <p>
-                Entenda as principais mudanças e como se adaptar para continuar
-                competindo.
+                Estamos preparando artigos, análises e atualizações relevantes
+                sobre engenharia, contratos, licitações, responsabilidade civil
+                e temas estratégicos do setor.
               </p>
             </div>
           </a>
         </div>
         <div class="blog-link fade-in">
-          <a href="#" class="btn btn-secondary">Ver todos os artigos →</a>
+          <a href="artigos.html" class="btn btn-secondary"
+            >Ver todos os artigos →</a
+          >
         </div>
       </div>
     </section>
@@ -318,10 +315,10 @@
           "
         >
           <a
-            href="https://wa.me/5562995669803"
+            href="https://www.instagram.com/danierufbm"
             class="btn btn-white"
             target="_blank"
-            >WhatsApp</a
+            >Instagram</a
           >
           <a
             href="https://www.linkedin.com/in/daniel-filipe-brito-108b40218?"
@@ -329,139 +326,84 @@
             style="color: #ffffff; border-color: rgba(255, 255, 255, 0.4)"
             >LinkedIn</a
           >
-          <a
-            href="https://www.instagram.com/danierufbm"
-            class="btn btn-white"
-            target="_blank"
-            >Instagram</a
-          >
         </div>
       </div>
     </section>
 
     <!-- ══ FOOTER ══ -->
     <footer>
-      <p>© 2026 Dr. Daniel FIlipe — Todos os direitos reservados</p>
+      <p>© 2026 Dr. Daniel Filipe — Todos os direitos reservados</p>
       <p style="margin-top: 0.4rem">
         Desenvolvido por Matheus Felipe —
         <a href="#">Todos os Direitos Reservados</a>
       </p>
     </footer>
 
-    <!-- ════════════════════════════════════════════════
-       JAVASCRIPT — comentado para fins didáticos
-  ════════════════════════════════════════════════ -->
-    <script>
-      /* ──────────────────────────────────────────
-       1. MENU HAMBURGUER (mobile)
-       O que faz: ao clicar no botão ☰, adiciona
-       ou remove a classe "open" nos elementos.
-       O CSS cuida da animação — o JS só diz
-       "está aberto" ou "está fechado".
-    ────────────────────────────────────────── */
+    <!-- ══ BOTÃO WHATSAPP FLUTUANTE ══ -->
+    <a
+      href="https://wa.me/5562995669803"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Fale pelo WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
 
-      // Pegamos os dois elementos pelo ID que colocamos no HTML
+    <script>
       const hamburger = document.getElementById("hamburger");
       const mobileMenu = document.getElementById("mobileMenu");
-
       hamburger.addEventListener("click", function () {
-        // classList.toggle adiciona a classe se não existe, remove se já existe
         hamburger.classList.toggle("open");
         mobileMenu.classList.toggle("open");
       });
-
-      // Função chamada ao clicar em qualquer link do menu mobile
-      // (para fechar o menu após navegar para a seção)
       function fecharMenu() {
         hamburger.classList.remove("open");
         mobileMenu.classList.remove("open");
       }
 
-      /* ──────────────────────────────────────────
-       2. CARROSSEL DE DEPOIMENTOS
-       O que faz: controla qual card está visível
-       movendo a "faixa" (track) com translate CSS.
-
-       Lógica:
-       - Temos N cards, cada um com largura 100%
-       - Mover para o card 0 = translateX(0%)
-       - Mover para o card 1 = translateX(-100%)
-       - Mover para o card 2 = translateX(-200%)
-    ────────────────────────────────────────── */
-
       const track = document.getElementById("carouselTrack");
       const btnAnterior = document.getElementById("btnAnterior");
       const btnProximo = document.getElementById("btnProximo");
       const dotsContainer = document.getElementById("carouselDots");
-
-      // Quantos cards existem dentro do track
       const totalCards = track.children.length;
-      let cardAtual = 1; // começa no primeiro card
-
-      // Cria um "bolinha" (dot) para cada card
+      let cardAtual = 0;
       for (let i = 0; i < totalCards; i++) {
         const dot = document.createElement("div");
         dot.classList.add("dot");
-        if (i === 0) dot.classList.add("active"); // primeira dot ativa
-        dot.addEventListener("click", () => irParaCard(i)); // clique direto na dot
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => irParaCard(i));
         dotsContainer.appendChild(dot);
       }
-
       function irParaCard(indice) {
         cardAtual = indice;
-        // Move a faixa: cada card tem 100% de largura
         track.style.transform = `translateX(-${cardAtual * 100}%)`;
-        // Atualiza as bolinhas
         document.querySelectorAll(".dot").forEach((d, i) => {
           d.classList.toggle("active", i === cardAtual);
         });
       }
-
-      // Botão "próximo" — avança um card (volta ao início se chegar no fim)
       btnProximo.addEventListener("click", function () {
-        const proximo = (cardAtual + 1) % totalCards;
-        irParaCard(proximo);
+        irParaCard((cardAtual + 1) % totalCards);
       });
-
-      // Botão "anterior" — volta um card (vai ao último se estiver no início)
       btnAnterior.addEventListener("click", function () {
-        const anterior = (cardAtual - 1 + totalCards) % totalCards;
-        irParaCard(anterior);
+        irParaCard((cardAtual - 1 + totalCards) % totalCards);
       });
+      setInterval(() => irParaCard((cardAtual + 1) % totalCards), 5000);
 
-      // Autoplay a cada 5 segundos
-      setInterval(() => {
-        const proximo = (cardAtual + 1) % totalCards;
-        irParaCard(proximo);
-      }, 5000);
-
-      /* ──────────────────────────────────────────
-       3. ANIMAÇÕES AO ROLAR (IntersectionObserver)
-       O que faz: observa cada elemento com a
-       classe "fade-in". Quando ele entra na tela,
-       adiciona a classe "visible" — aí o CSS
-       faz o elemento aparecer com transição.
-
-       IntersectionObserver é a forma moderna e
-       performática de detectar scroll — sem
-       ficar escutando o evento "scroll" 60x/seg.
-    ────────────────────────────────────────── */
-
-      // Criamos o "observador"
       const observer = new IntersectionObserver(
         function (entries) {
           entries.forEach(function (entry) {
-            // entry.isIntersecting = true quando o elemento está visível na tela
             if (entry.isIntersecting) {
               entry.target.classList.add("visible");
-              observer.unobserve(entry.target); // para de observar após animar (eficiência)
+              observer.unobserve(entry.target);
             }
           });
         },
-        { threshold: 0.15 }, // dispara quando 15% do elemento está visível
+        { threshold: 0.15 },
       );
-
-      // Aplicamos o observer em todos os elementos com classe "fade-in"
       document.querySelectorAll(".fade-in").forEach(function (el) {
         observer.observe(el);
       });

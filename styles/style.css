@@ -112,7 +112,7 @@ h3 {
   color: var(--marinho);
 }
 
-/* ── FADE-IN (controlado pelo JS / IntersectionObserver) ── */
+/* ── FADE-IN ── */
 .fade-in {
   opacity: 0;
   transform: translateY(28px);
@@ -172,7 +172,6 @@ h3 {
   color: var(--verde);
 }
 
-/* Hamburguer — visível só no mobile */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -190,8 +189,6 @@ h3 {
   border-radius: 2px;
   transition: all 0.3s;
 }
-
-/* Menu mobile aberto */
 .hamburger.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -244,7 +241,6 @@ h3 {
   position: relative;
   overflow: hidden;
 }
-/* Elemento decorativo de fundo */
 .hero::before {
   content: "";
   position: absolute;
@@ -333,17 +329,6 @@ h3 {
   overflow: hidden;
   position: relative;
 }
-.sobre-foto-placeholder {
-  width: 70%;
-  aspect-ratio: 1;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 50%;
-  margin: 0 auto 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
 .sobre p {
   color: var(--cinza);
   line-height: 1.75;
@@ -380,7 +365,6 @@ h3 {
   margin-top: 0.5rem;
   font-size: 1rem;
 }
-
 .servicos-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -432,7 +416,7 @@ h3 {
 }
 
 /* ════════════════════════════════
-       DEPOIMENTOS (CARROSSEL)
+       DEPOIMENTOS
     ════════════════════════════════ */
 .depoimentos {
   padding: 4rem 0;
@@ -450,7 +434,6 @@ h3 {
   border-color: #a0d4c8;
 }
 
-/* Wrapper do carrossel */
 .carousel-wrapper {
   position: relative;
   overflow: hidden;
@@ -506,7 +489,6 @@ h3 {
   color: rgba(255, 255, 255, 0.55);
 }
 
-/* Controles do carrossel */
 .carousel-controls {
   display: flex;
   align-items: center;
@@ -551,7 +533,7 @@ h3 {
 }
 
 /* ════════════════════════════════
-       BLOG / ARTIGOS
+       BLOG
     ════════════════════════════════ */
 .blog {
   padding: 4rem 0;
@@ -582,9 +564,9 @@ h3 {
 }
 .card-blog-img {
   height: 210px;
-  background-image: url(../images/Justice_Blueprint_page-0001.jpg);
+  background-image: url(../images/Em_Breve_Temporario.png);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -648,4 +630,60 @@ footer {
 }
 footer a {
   color: var(--verde);
+}
+
+/* ════════════════════════════════
+       WHATSAPP FLUTUANTE
+    ════════════════════════════════ */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  width: 58px;
+  height: 58px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+.whatsapp-float:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+}
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+/* Pulso animado para chamar atenção */
+.whatsapp-float::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #25d366;
+  animation: pulso 2.5s ease-out infinite;
+  z-index: -1;
+}
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }

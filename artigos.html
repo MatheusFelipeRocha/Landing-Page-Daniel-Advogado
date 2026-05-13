@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — Dr. Daniel Filipe Brito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/artigos.css" />
+    <link rel="icon" href="./images/Favicon-Daniel_Felipe.jpeg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="./index.html"
+          ><div class="navbar-logo">
+            Dr. Daniel Filipe Brito Martins
+            <span>Advocacia · Direito de Engenharia</span>
+          </div></a
+        >
+        <ul class="navbar-links">
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#servicos">Serviços</a></li>
+          <li><a href="index.html#depoimentos">Depoimentos</a></li>
+          <li><a href="artigos.html" class="nav-ativo">Blog</a></li>
+          <li>
+            <a
+              href="index.html#contato"
+              class="btn btn-primary"
+              style="padding: 0.5rem 1.2rem; font-size: 0.85rem"
+              >Fale comigo</a
+            >
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="index.html#sobre" onclick="fecharMenu()">Sobre</a></li>
+        <li>
+          <a href="index.html#servicos" onclick="fecharMenu()">Serviços</a>
+        </li>
+        <li>
+          <a href="index.html#depoimentos" onclick="fecharMenu()"
+            >Depoimentos</a
+          >
+        </li>
+        <li><a href="artigos.html" onclick="fecharMenu()">Blog</a></li>
+        <li>
+          <a href="index.html#contato" onclick="fecharMenu()">Fale comigo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="artigos-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Início</a>
+          <span>›</span>
+          <span>Blog</span>
+        </div>
+        <span class="tag" style="color: #a0d4c8; border-color: #a0d4c8"
+          >Blog</span
+        >
+        <h1>Artigos e Notícias</h1>
+        <p>
+          Conteúdo jurídico especializado para engenheiros, construtoras e
+          profissionais do setor.
+        </p>
+      </div>
+    </div>
+
+    <div class="artigos-filtros">
+      <div class="container">
+        <div class="filtros-inner">
+          <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+          <button class="filtro-btn" data-filtro="empresarial">
+            Empresarial
+          </button>
+          <button class="filtro-btn" data-filtro="contratos">Contratos</button>
+          <button class="filtro-btn" data-filtro="licitacoes">
+            Licitações
+          </button>
+          <button class="filtro-btn" data-filtro="responsabilidade">
+            Responsabilidade
+          </button>
+          <button class="filtro-btn" data-filtro="ambiental">Ambiental</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="artigos-main">
+      <div class="container">
+        <a
+          href="artigo.html"
+          class="artigo-destaque fade-in"
+          data-categoria="empresarial"
+          style="text-decoration: none; color: inherit"
+        >
+          <div class="destaque-img">
+            <div class="destaque-img-placeholder"></div>
+            <span class="destaque-label">Destaque</span>
+          </div>
+          <div class="destaque-corpo">
+            <div class="card-blog-cat">Direito Empresarial</div>
+            <h2>O Fim das EIRELIs — Sociedades Limitadas sem sociedade</h2>
+            <p>
+              As Empresas Individuais de Responsabilidade Limitada (EIRELI)
+              foram substituídas pelas Sociedades Limitadas Unipessoais (SLU)
+              com a lei nº 14.195/2021. Entenda o que mudou e os impactos para
+              os pequenos empreendedores.
+            </p>
+            <div class="artigo-meta">
+              <span class="meta-data">📅 2025</span>
+              <span class="meta-tempo">⏱ 4 min de leitura</span>
+            </div>
+            <span
+              class="btn btn-primary"
+              style="
+                margin-top: 1rem;
+                display: inline-flex;
+                pointer-events: none;
+              "
+            >
+              Ler artigo completo →
+            </span>
+          </div>
+        </a>
+
+        <div class="artigos-grid">
+          <article class="artigo-card fade-in" data-categoria="contratos">
+            <div class="artigo-card-img">
+              <div class="artigo-img-placeholder"></div>
+              <span class="artigo-cat-badge">Contratos</span>
+            </div>
+            <div class="artigo-card-corpo">
+              <h3>Em breve, novos conteúdos especializados</h3>
+              <p>
+                Estamos preparando artigos, análises e atualizações relevantes
+                sobre engenharia, contratos, licitações, responsabilidade civil
+                e temas estratégicos do setor.
+              </p>
+              <div class="artigo-meta">
+                <span class="meta-data"></span>
+              </div>
+              <span
+                class="artigo-link"
+                style="color: var(--cinza); cursor: default"
+              ></span>
+            </div>
+          </article>
+
+          <article class="artigo-card fade-in" data-categoria="licitacoes">
+            <div class="artigo-card-img">
+              <div class="artigo-img-placeholder"></div>
+              <span class="artigo-cat-badge">Licitações</span>
+            </div>
+            <div class="artigo-card-corpo">
+              <h3>Em breve, novos conteúdos especializados</h3>
+              <p>
+                Estamos preparando artigos, análises e atualizações relevantes
+                sobre engenharia, contratos, licitações, responsabilidade civil
+                e temas estratégicos do setor.
+              </p>
+              <div class="artigo-meta">
+                <span class="meta-data">🔜 Em breve</span>
+              </div>
+              <span
+                class="artigo-link"
+                style="color: var(--cinza); cursor: default"
+              ></span>
+            </div>
+          </article>
+
+          <article
+            class="artigo-card fade-in"
+            data-categoria="responsabilidade"
+          >
+            <div class="artigo-card-img">
+              <div class="artigo-img-placeholder"></div>
+              <span class="artigo-cat-badge">Responsabilidade</span>
+            </div>
+            <div class="artigo-card-corpo">
+              <h3>
+                Em breve, novos conteúdos especializados
+              <p>
+                Estamos preparando artigos, análises e atualizações relevantes sobre engenharia, contratos, licitações, responsabilidade civil e temas estratégicos do setor.
+              </p>
+              <div class="artigo-meta">
+                <span class="meta-data">🔜 Em breve</span>
+              </div>
+              <span
+                class="artigo-link"
+                style="color: var(--cinza); cursor: default"
+                >Em breve</span
+              >
+            </div>
+          </article>
+
+          <article class="artigo-card fade-in" data-categoria="ambiental">
+            <div class="artigo-card-img">
+              <div class="artigo-img-placeholder"></div>
+              <span class="artigo-cat-badge">Ambiental</span>
+            </div>
+            <div class="artigo-card-corpo">
+              <h3>
+                Em breve, novos conteúdos especializados
+              </h3>
+              <p>
+                Estamos preparando artigos, análises e atualizações relevantes sobre engenharia, contratos, licitações, responsabilidade civil e temas estratégicos do setor.
+              </p>
+              <div class="artigo-meta">
+                <span class="meta-data"></span>
+              </div>
+              <span
+                class="artigo-link"
+                style="color: var(--cinza); cursor: default"
+                ></span
+              >
+            </div>
+          </article>
+
+          <article class="artigo-card fade-in" data-categoria="contratos">
+            <div class="artigo-card-img">
+              <div class="artigo-img-placeholder"></div>
+              <span class="artigo-cat-badge">Contratos</span>
+            </div>
+            <div class="artigo-card-corpo">
+              <h3>
+                Em breve, novos conteúdos especializados
+              </h3>
+              <p>
+                Estamos preparando artigos, análises e atualizações relevantes sobre engenharia, contratos, licitações, responsabilidade civil e temas estratégicos do setor.
+              </p>
+              <div class="artigo-meta">
+                <span class="meta-data"></span>
+              </div>
+              <span
+                class="artigo-link"
+                style="color: var(--cinza); cursor: default"
+                ></span
+              >
+            </div>
+          </article>
+
+          <article
+            class="artigo-card fade-in"
+            data-categoria="responsabilidade"
+          >
+            <div class="artigo-card-img">
+              <div class="artigo-img-placeholder"></div>
+              <span class="artigo-cat-badge">Responsabilidade</span>
+            </div>
+            <div class="artigo-card-corpo">
+              <h3>
+                Em breve, novos conteúdos especializados
+              </h3>
+              <p>
+                Estamos preparando artigos, análises e atualizações relevantes sobre engenharia, contratos, licitações, responsabilidade civil e temas estratégicos do setor.
+              </p>
+              <div class="artigo-meta">
+                <span class="meta-data"></span>
+              </div>
+              <span
+                class="artigo-link"
+                style="color: var(--cinza); cursor: default"
+                ></span
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="sem-resultados" id="semResultados" style="display: none">
+          <p>Nenhum artigo encontrado nessa categoria ainda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container fade-in">
+        <span class="tag" style="color: #a0d4c8; border-color: #a0d4c8"
+          >Precisa de ajuda?</span
+        >
+        <h2>Tem dúvidas sobre<br />seu caso específico?</h2>
+        <p>
+          Entre em contato. Uma conversa sem compromisso pode mudar o rumo do
+          seu problema.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 0.85rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a
+            href="https://www.instagram.com/danierufbm"
+            class="btn btn-white"
+            target="_blank"
+            >Instagram</a
+          >
+          <a
+            href="index.html#contato"
+            class="btn btn-secondary"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
+            >Ver contatos</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Dr. Daniel Filipe — Todos os direitos reservados</p>
+      <p style="margin-top: 0.4rem">
+        Desenvolvido por Matheus Felipe —
+        <a href="#">Todos os Direitos Reservados</a>
+      </p>
+    </footer>
+
+    <a
+      href="https://wa.me/5562995669803"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Fale pelo WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+      function fecharMenu() {
+        hamburger.classList.remove("open");
+        mobileMenu.classList.remove("open");
+      }
+
+      const botoesFiltro = document.querySelectorAll(".filtro-btn");
+      const cards = document.querySelectorAll(".artigo-card, .artigo-destaque");
+      const semResultados = document.getElementById("semResultados");
+
+      botoesFiltro.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          botoesFiltro.forEach((b) => b.classList.remove("ativo"));
+          this.classList.add("ativo");
+          const filtro = this.dataset.filtro;
+          let visiveis = 0;
+          cards.forEach((card) => {
+            const cat = card.dataset.categoria;
+            if (filtro === "todos" || cat === filtro) {
+              card.style.display = "";
+              visiveis++;
+            } else {
+              card.style.display = "none";
+            }
+          });
+          semResultados.style.display = visiveis === 0 ? "block" : "none";
+        });
+      });
+
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
