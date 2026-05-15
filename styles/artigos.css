@@ -1,15 +1,8 @@
-/* ════════════════════════════════
-   ARTIGOS.CSS — estilos exclusivos da página de blog
-   Importa style.css como base, só adiciona o que é novo
-   ════════════════════════════════ */
-
-/* ── LINK ATIVO NA NAV ── */
 .nav-ativo {
   color: var(--verde) !important;
   font-weight: 500;
 }
 
-/* ── HERO DA PÁGINA DE ARTIGOS ── */
 .artigos-hero {
   background: linear-gradient(135deg, var(--verde) 0%, var(--marinho) 30%);
   color: #fff;
@@ -59,13 +52,12 @@
   max-width: 520px;
 }
 
-/* ── BARRA DE FILTROS ── */
 .artigos-filtros {
   background: #fff;
   border-bottom: 1px solid rgba(0, 103, 79, 0.1);
   padding: 0.9rem 0;
   position: sticky;
-  top: 64px; /* altura da navbar */
+  top: 64px;
   z-index: 90;
 }
 .filtros-inner {
@@ -96,13 +88,11 @@
   color: #fff;
 }
 
-/* ── ÁREA PRINCIPAL ── */
 .artigos-main {
   padding: 3rem 0 4rem;
   background: var(--off);
 }
 
-/* ── ARTIGO DESTAQUE ── */
 .artigo-destaque {
   display: grid;
   grid-template-columns: 1fr;
@@ -184,7 +174,6 @@
   line-height: 1.7;
 }
 
-/* ── META DADOS ── */
 .artigo-meta {
   display: flex;
   gap: 1rem;
@@ -194,7 +183,6 @@
   color: var(--cinza);
 }
 
-/* ── GRID DE ARTIGOS ── */
 .artigos-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -211,7 +199,6 @@
   }
 }
 
-/* ── CARD DE ARTIGO ── */
 .artigo-card {
   background: #fff;
   border-radius: var(--radius);
@@ -281,7 +268,6 @@
   color: var(--marinho);
 }
 
-/* ── SEM RESULTADOS ── */
 .sem-resultados {
   text-align: center;
   padding: 3rem 1rem;
