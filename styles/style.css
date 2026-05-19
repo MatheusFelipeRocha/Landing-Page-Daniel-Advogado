@@ -165,7 +165,7 @@ h3 {
   color: #fff;
 }
 .navbar-links a:hover {
-  color: var(--verde);
+  color: var(#fff);
 }
 
 .hamburger {
