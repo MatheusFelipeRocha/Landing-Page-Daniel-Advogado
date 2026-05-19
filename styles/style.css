@@ -160,6 +160,10 @@ h3 {
   color: var(--texto);
   transition: color 0.2s;
 }
+
+.navbar-links a.btn-primary {
+  color: #fff;
+}
 .navbar-links a:hover {
   color: var(--verde);
 }
