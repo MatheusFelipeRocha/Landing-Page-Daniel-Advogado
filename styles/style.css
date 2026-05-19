@@ -226,7 +226,7 @@ h3 {
 .hero {
   background: linear-gradient(135deg, var(--verde) 0%, var(--marinho) 30%);
   color: #fff;
-  padding: 4.5rem 0 3.5rem;
+  padding: 2rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -344,7 +344,7 @@ h3 {
 }
 
 .servicos {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: var(--off);
 }
 .section-header {
@@ -407,7 +407,7 @@ h3 {
 }
 
 .depoimentos {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: linear-gradient(135deg, var(--verde), var(--marinho) 50%);
   color: #fff;
 }
@@ -521,7 +521,7 @@ h3 {
 }
 
 .blog {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: #fff;
 }
 .blog-grid {
@@ -585,7 +585,7 @@ h3 {
 }
 
 .cta {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: linear-gradient(135deg, var(--verde) 0%, var(--marinho) 100%);
   color: #fff;
   text-align: center;
