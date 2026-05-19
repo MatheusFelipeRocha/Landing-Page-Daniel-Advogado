@@ -318,7 +318,7 @@ h3 {
 .sobre p {
   color: var(--cinza);
   line-height: 1.75;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 .sobre-chips {
   display: flex;
@@ -600,7 +600,8 @@ footer {
   font-size: 0.82rem;
 }
 footer a {
-  color: var(--verde);
+  color: #4dba96;
+  text-decoration: underline;
 }
 
 .whatsapp-float {

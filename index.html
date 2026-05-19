@@ -3,401 +3,440 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. Daniel Filipe Brito — Advocacia em Engenharia</title>
+    <meta
+      name="description"
+      content="Dr. Daniel Filipe Brito — Advocacia especializada em defesa de prerrogativas profissionais, processos ético-disciplinares, conselhos de classe e exercício profissional."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Dr. Daniel Filipe Brito Martins" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://danielbrito.adv.br" />
+    <meta
+      property="og:title"
+      content="Dr. Daniel Filipe Brito — Advocacia em Defesa de Prerrogativas"
+    />
+    <meta
+      property="og:description"
+      content="Advocacia especializada em defesa de prerrogativas profissionais, processos ético-disciplinares, conselhos de classe e exercício profissional."
+    />
+    <meta
+      property="og:image"
+      content="https://danielbrito.adv.br/images/preview-social.png"
+    />
+    <title>
+      Dr. Daniel Filipe Brito — Advocacia em Defesa de Prerrogativas
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" href="./images/Favicon-Daniel_Felipe.jpeg" />
+    <link rel="icon" href="./images/favicon_balanca_dark.jpeg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <a href="#">
-          <div class="navbar-logo">
-            Dr. Daniel Filipe Brito Martins
-            <span>Advocacia · Direito de Engenharia</span>
-          </div></a
-        >
-        <ul class="navbar-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="artigos.html">Blog</a></li>
-          <li>
-            <a
-              href="#contato"
-              class="btn btn-primary"
-              style="padding: 0.5rem 1.2rem; font-size: 0.85rem"
-              >Fale comigo</a
-            >
-          </li>
+  <main>
+    <body>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#">
+            <div class="navbar-logo">
+              Dr. Daniel Filipe Brito Martins
+              <span>Advocacia - Em Defesa de Prerrogativas</span>
+            </div></a
+          >
+          <ul class="navbar-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="artigos.html">Blog</a></li>
+            <li>
+              <a
+                href="#contato"
+                class="btn btn-primary"
+                style="padding: 0.5rem 1.2rem; font-size: 0.85rem"
+                >Fale comigo</a
+              >
+            </li>
+          </ul>
+          <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <ul class="mobile-menu" id="mobileMenu">
+          <li><a href="#sobre" onclick="fecharMenu()">Sobre</a></li>
+          <li><a href="#servicos" onclick="fecharMenu()">Serviços</a></li>
+          <li><a href="#depoimentos" onclick="fecharMenu()">Depoimentos</a></li>
+          <li><a href="artigos.html" onclick="fecharMenu()">Blog</a></li>
+          <li><a href="#contato" onclick="fecharMenu()">Fale comigo</a></li>
         </ul>
-        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-      <ul class="mobile-menu" id="mobileMenu">
-        <li><a href="#sobre" onclick="fecharMenu()">Sobre</a></li>
-        <li><a href="#servicos" onclick="fecharMenu()">Serviços</a></li>
-        <li><a href="#depoimentos" onclick="fecharMenu()">Depoimentos</a></li>
-        <li><a href="artigos.html" onclick="fecharMenu()">Blog</a></li>
-        <li><a href="#contato" onclick="fecharMenu()">Fale comigo</a></li>
-      </ul>
-    </nav>
+      </nav>
 
-    <section class="hero">
-      <div class="container">
-        <span class="tag hero-tag">Advocacia Especializada</span>
-        <h1>
-          Direito Aplicado<br />à Defesa de Prerrogativas em Processos Éticos
-        </h1>
-        <p>
-          Defesa técnica e estratégica perante o CRM, CREA, CROP e demais
-          conselhos, garantindo o seu direito de exercer o que você ama.
-        </p>
-        <div class="hero-btns">
-          <a href="#contato" class="btn btn-primary">Agendar consulta</a>
-          <a
-            href="#servicos"
-            class="btn btn-secondary"
-            style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
-            >Ver serviços</a
-          >
-        </div>
-        <div class="hero-badge">
-          <div class="hero-badge-item">
-            <strong>+40</strong>
-            <span>Clientes atendidos</span>
-          </div>
-          <div class="hero-badge-item">
-            <strong>6 anos</strong>
-            <span>De experiência</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sobre" id="sobre">
-      <div class="container">
-        <div class="sobre-grid">
-          <div class="sobre-foto"></div>
-          <div class="fade-in">
-            <span class="tag">Quem sou eu</span>
-            <h2>Advocacia com precisão técnica</h2>
-            <p>
-              Com uma trajetória pautada pela ética e competência, Daniel Brito
-              é advogado formado pela Uni Goiás e especialista em traduzir a
-              complexidade jurídica em resultados práticos. Com 6 anos de
-              atuação estratégica nas áreas de Direito Cível, Administrativo,
-              Tributária, Empresarial e Consumerista, seu foco é oferecer um
-              atendimento personalizado, garantindo segurança jurídica e
-              soluções sob medida para cada desafio de seus clientes.
-            </p>
-            <p>
-              Meu objetivo é simples: oferecer segurança jurídica real para quem
-              constrói e transforma o país.
-            </p>
-            <div class="sobre-chips">
-              <span class="chip">Contratos de Obra</span>
-              <span class="chip">Perícia Judicial</span>
-              <span class="chip">Licitações</span>
-              <span class="chip">Responsabilidade Civil</span>
-              <span class="chip">Direito Ambiental</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="servicos" id="servicos">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="tag">O que faço</span>
-          <h2>Serviços</h2>
-          <p>Soluções jurídicas sob medida para o setor de engenharia</p>
-        </div>
-        <div class="servicos-grid">
-          <div class="card-servico fade-in">
-            <div class="card-icon">⚖️</div>
-            <h3>Contratos de Obra</h3>
-            <p>
-              Elaboração, revisão e negociação de contratos de empreitada,
-              subempreitada e fornecimento de materiais.
-            </p>
-          </div>
-          <div class="card-servico fade-in">
-            <div class="card-icon">🏗️</div>
-            <h3>Disputas em Licitação</h3>
-            <p>
-              Recursos administrativos, impugnações e representações em
-              processos licitatórios públicos e privados.
-            </p>
-          </div>
-          <div class="card-servico fade-in">
-            <div class="card-icon">📋</div>
-            <h3>Laudos Periciais</h3>
-            <p>
-              Assistência técnica jurídica em perícias de engenharia civil e
-              assessoria em ações indenizatórias.
-            </p>
-          </div>
-          <div class="card-servico fade-in">
-            <div class="card-icon">🛡️</div>
-            <h3>Responsabilidade Civil</h3>
-            <p>
-              Defesa de engenheiros e construtoras em ações por vícios, falhas
-              construtivas e acidentes de obra.
-            </p>
-          </div>
-          <div class="card-servico fade-in">
-            <div class="card-icon">🌿</div>
-            <h3>Licenciamento Ambiental</h3>
-            <p>
-              Orientação jurídica para obtenção de licenças e adequação
-              ambiental de empreendimentos.
-            </p>
-          </div>
-          <div class="card-servico fade-in">
-            <div class="card-icon">🤝</div>
-            <h3>Consultoria Preventiva</h3>
-            <p>
-              Análise de riscos contratuais e compliance jurídico para empresas
-              do setor de construção civil.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="depoimentos" id="depoimentos">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="tag">Depoimentos</span>
-          <h2 style="color: #fff">O que dizem meus clientes</h2>
+      <section class="hero">
+        <div class="container">
+          <span class="tag hero-tag">Advocacia Especializada</span>
+          <h1>
+            Direito Aplicado<br />à Defesa de Prerrogativas em Processos Éticos
+          </h1>
           <p>
-            Histórias reais de quem teve segurança jurídica com meu trabalho
+            Defesa técnica e estratégica perante o CRM, CREA, CROP, CRO e demais
+            conselhos, garantindo o seu direito de exercer o que você ama.
           </p>
+          <div class="hero-btns">
+            <a href="#contato" class="btn btn-primary">Agendar consulta</a>
+            <a
+              href="#servicos"
+              class="btn btn-secondary"
+              style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
+              >Ver serviços</a
+            >
+          </div>
+          <div class="hero-badge">
+            <div class="hero-badge-item">
+              <strong>+142</strong>
+              <span>Clientes atendidos</span>
+            </div>
+            <div class="hero-badge-item">
+              <strong>6 anos</strong>
+              <span>De experiência</span>
+            </div>
+          </div>
         </div>
-        <div class="carousel-wrapper fade-in">
-          <div class="carousel-track" id="carouselTrack">
-            <div class="card-depoimento">
-              <div class="depo-stars">★★★★★</div>
-              <p class="depo-texto">
-                "Contratei o Dr. Daniel para revisar um contrato de empreitada e
-                ele identificou cláusulas abusivas que poderiam ter nos custado
-                caro. Profissional extremamente técnico e atencioso."
+      </section>
+
+      <section class="sobre" id="sobre">
+        <div class="container">
+          <div class="sobre-grid">
+            <div class="sobre-foto"></div>
+            <div class="fade-in">
+              <span class="tag">Quem sou eu</span>
+              <h2>Advocacia com precisão técnica</h2>
+              <p>
+                Com uma trajetória pautada pela ética e competência, Daniel
+                Brito é advogado formado pela Uni Goiás e especialista em
+                traduzir a complexidade jurídica em resultados práticos. Com 6
+                anos de atuação estratégica nas áreas de Direito Cível,
+                Administrativo, Tributária, Empresarial e Consumerista, seu foco
+                é oferecer um atendimento personalizado, garantindo segurança
+                jurídica e soluções sob medida para cada desafio de seus
+                clientes.
               </p>
-              <div class="depo-autor">
-                <div class="depo-avatar">RC</div>
-                <div>
-                  <div class="depo-autor-nome">Ricardo C.</div>
-                  <div class="depo-autor-cargo">
-                    Engenheiro Civil · Goiânia, GO
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-depoimento">
-              <div class="depo-stars">★★★★★</div>
-              <p class="depo-texto">
-                "Precisávamos de assessoria em uma licitação pública e o suporte
-                foi fundamental. Ganhamos o recurso e o contrato. Recomendo sem
-                hesitar."
+              <p>
+                Meu objetivo é simples: oferecer segurança jurídica real para
+                quem constrói e transforma o país.
               </p>
-              <div class="depo-autor">
-                <div class="depo-avatar">AM</div>
-                <div>
-                  <div class="depo-autor-nome">Ana M.</div>
-                  <div class="depo-autor-cargo">
-                    Diretora · Construtora Valve
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-depoimento">
-              <div class="depo-stars">★★★★★</div>
-              <p class="depo-texto">
-                "Fui acionado judicialmente por um suposto vício construtivo.
-                Com a defesa do Dr. Daniel e um laudo pericial bem fundamentado,
-                o processo foi encerrado a meu favor."
-              </p>
-              <div class="depo-autor">
-                <div class="depo-avatar">FT</div>
-                <div>
-                  <div class="depo-autor-nome">Felipe T.</div>
-                  <div class="depo-autor-cargo">Arquiteto e Construtor</div>
-                </div>
+              <div class="sobre-chips">
+                <span class="chip"
+                  >Tribunal de Ética: Consultoria e Defesa</span
+                >
+                <span class="chip"
+                  >Gestão de Crises em Conselhos Profissionais</span
+                >
+                <span class="chip"
+                  >Direito Disciplinar e Defesa de Registro</span
+                >
+                <span class="chip">​Direito Administrativo Profissional</span>
+                <span class="chip">Direito das Profissões Regulamentadas</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-controls">
-          <button class="carousel-btn" id="btnAnterior" aria-label="Anterior">
-            &#8592;
-          </button>
-          <div class="carousel-dots" id="carouselDots"></div>
-          <button class="carousel-btn" id="btnProximo" aria-label="Próximo">
-            &#8594;
-          </button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="blog" id="blog">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="tag">Blog</span>
-          <h2>Artigos e Notícias</h2>
-          <p>Atualidades jurídicas para o setor de engenharia</p>
-        </div>
-        <div class="blog-grid">
-          <a href="artigos.html" class="card-blog fade-in">
-            <div class="card-blog-img">
-              <img src="./images/Marcos_Eirelli.jpg" alt="" />
-            </div>
-            <div class="card-blog-body">
-              <div class="card-blog-cat">Empreendedorismo</div>
-              <h3>
-                De EIRELI para SLU: O que muda na prática para a sua empresa?
-              </h3>
+      <section class="servicos" id="servicos">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="tag">O que faço</span>
+            <h2>Serviços</h2>
+            <p>Soluções jurídicas sob medida para o setor de engenharia</p>
+          </div>
+          <div class="servicos-grid">
+            <div class="card-servico fade-in">
+              <div class="card-icon">⚖️</div>
+              <h3>Tribunal de Ética: Consultoria e Defesa</h3>
               <p>
-                As novas regras da Lei nº 14.195/2021 que garantem
-                responsabilidade limitada sem a exigência de capital social
-                mínimo.
+                Atuamos de forma estratégica na orientação preventiva e na
+                defesa técnica de profissionais em face de sindicâncias e
+                processos ético-disciplinares.
               </p>
             </div>
-          </a>
-          <a href="artigos.html" class="card-blog fade-in">
-            <div class="card-blog-img"></div>
-            <div class="card-blog-body">
-              <div class="card-blog-cat">Licitações</div>
-              <h3>Em breve, novos conteúdos especializados</h3>
+            <div class="card-servico fade-in">
+              <div class="card-icon">🚨</div>
+              <h3>Gestão de Crises em Conselhos Profissionais</h3>
               <p>
-                Estamos preparando artigos, análises e atualizações relevantes
-                sobre engenharia, contratos, licitações, responsabilidade civil
-                e temas estratégicos do setor.
+                Oferecemos suporte jurídico imediato e especializado para
+                mitigar os impactos de fiscalizações agressivas, desenvolvendo
+                planos de contingência personalizados, minimizando desgastes
+                institucionais e financeiros.
               </p>
             </div>
-          </a>
+            <div class="card-servico fade-in">
+              <div class="card-icon">📜</div>
+              <h3>Direito Disciplinar e Defesa de Registro</h3>
+              <p>
+                Acompanhamos o profissional em todas as fases do processo
+                administrativo disciplinar, desde a notificação inicial até as
+                instâncias recursais superiores.
+              </p>
+            </div>
+            <div class="card-servico fade-in">
+              <div class="card-icon">🛡️</div>
+              <h3>Regularização e Blindagem de Exercício Profissional</h3>
+              <p>
+                Assessoramos a estruturação de consultórios, escritórios e
+                empresas para que operem em estrita conformidade com as normas e
+                resoluções vigentes do seu conselho de classe.
+              </p>
+            </div>
+            <div class="card-servico fade-in">
+              <div class="card-icon">🏛️</div>
+              <h3>Direito Administrativo Profissional</h3>
+              <p>
+                Dedicamo-nos ao estudo e aplicação das normas públicas que regem
+                a relação entre os conselhos de classe e seus inscritos,
+                combatendo abusos de poder e exigências ilegais.
+              </p>
+            </div>
+            <div class="card-servico fade-in">
+              <div class="card-icon">📋</div>
+              <h3>Direito das Profissões Regulamentadas</h3>
+              <p>
+                Prestamos consultoria especializada sobre os limites e
+                prerrogativas legais de cada categoria, auxiliando em questões
+                de dupla inscrição, transferência de registros e conflitos de
+                competência entre conselhos.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="blog-link fade-in">
-          <a href="artigos.html" class="btn btn-secondary"
-            >Ver todos os artigos →</a
-          >
+      </section>
+
+      <section class="depoimentos" id="depoimentos">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="tag">Depoimentos</span>
+            <h2 style="color: #fff">O que dizem meus clientes</h2>
+            <p>
+              Histórias reais de quem teve segurança jurídica com meu trabalho
+            </p>
+          </div>
+          <div class="carousel-wrapper fade-in">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="card-depoimento">
+                <div class="depo-stars">★★★★★</div>
+                <p class="depo-texto">
+                  "Contratei o Dr. Daniel para revisar um contrato de empreitada
+                  e ele identificou cláusulas abusivas que poderiam ter nos
+                  custado caro. Profissional extremamente técnico e atencioso."
+                </p>
+                <div class="depo-autor">
+                  <div class="depo-avatar">RC</div>
+                  <div>
+                    <div class="depo-autor-nome">Ricardo C.</div>
+                    <div class="depo-autor-cargo">
+                      Engenheiro Civil · Goiânia, GO
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-depoimento">
+                <div class="depo-stars">★★★★★</div>
+                <p class="depo-texto">
+                  "Precisávamos de assessoria em uma licitação pública e o
+                  suporte foi fundamental. Ganhamos o recurso e o contrato.
+                  Recomendo sem hesitar."
+                </p>
+                <div class="depo-autor">
+                  <div class="depo-avatar">AM</div>
+                  <div>
+                    <div class="depo-autor-nome">Ana M.</div>
+                    <div class="depo-autor-cargo">
+                      Diretora · Construtora Valve
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-depoimento">
+                <div class="depo-stars">★★★★★</div>
+                <p class="depo-texto">
+                  "Fui acionado judicialmente por um suposto vício construtivo.
+                  Com a defesa do Dr. Daniel e um laudo pericial bem
+                  fundamentado, o processo foi encerrado a meu favor."
+                </p>
+                <div class="depo-autor">
+                  <div class="depo-avatar">FT</div>
+                  <div>
+                    <div class="depo-autor-nome">Felipe T.</div>
+                    <div class="depo-autor-cargo">Arquiteto e Construtor</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="btnAnterior" aria-label="Anterior">
+              &#8592;
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button class="carousel-btn" id="btnProximo" aria-label="Próximo">
+              &#8594;
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="cta" id="contato">
-      <div class="container fade-in">
-        <span class="tag" style="color: #a0d4c8; border-color: #a0d4c8"
-          >Contato</span
-        >
-        <h2>Pronto para proteger<br />seu negócio?</h2>
-        <p>Agende uma conversa sem compromisso. Vamos entender o seu caso.</p>
-        <div
-          style="
-            display: flex;
-            gap: 0.85rem;
-            justify-content: center;
-            flex-wrap: wrap;
-          "
-        >
-          <a
-            href="https://www.instagram.com/danierufbm"
-            class="btn btn-white"
-            target="_blank"
-            >Instagram</a
-          >
-          <a
-            href="https://www.linkedin.com/in/daniel-filipe-brito-108b40218?"
-            class="btn btn-secondary"
-            style="color: #ffffff; border-color: rgba(255, 255, 255, 0.4)"
-            >LinkedIn</a
-          >
+      <section class="blog" id="blog">
+        <div class="container">
+          <div class="section-header fade-in">
+            <span class="tag">Blog</span>
+            <h2>Artigos e Notícias</h2>
+            <p>Atualidades jurídicas para o setor de engenharia</p>
+          </div>
+          <div class="blog-grid">
+            <a href="artigos.html" class="card-blog fade-in">
+              <div class="card-blog-img">
+                <img src="./images/Marcos_Eirelli.jpg" alt="" />
+              </div>
+              <div class="card-blog-body">
+                <div class="card-blog-cat">Empreendedorismo</div>
+                <h3>
+                  De EIRELI para SLU: O que muda na prática para a sua empresa?
+                </h3>
+                <p>
+                  As novas regras da Lei nº 14.195/2021 que garantem
+                  responsabilidade limitada sem a exigência de capital social
+                  mínimo.
+                </p>
+              </div>
+            </a>
+            <a href="artigos.html" class="card-blog fade-in">
+              <div class="card-blog-img"></div>
+              <div class="card-blog-body">
+                <div class="card-blog-cat">Licitações</div>
+                <h3>Em breve, novos conteúdos especializados</h3>
+                <p>
+                  Estamos preparando artigos, análises e atualizações relevantes
+                  sobre engenharia, contratos, licitações, responsabilidade
+                  civil e temas estratégicos do setor.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="blog-link fade-in">
+            <a href="artigos.html" class="btn btn-secondary"
+              >Ver todos os artigos →</a
+            >
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer>
-      <p>© 2026 Dr. Daniel Filipe — Todos os direitos reservados</p>
-      <p style="margin-top: 0.4rem">
-        Desenvolvido por Matheus Felipe —
-        <a href="#">Todos os Direitos Reservados</a>
-      </p>
-    </footer>
+      <section class="cta" id="contato">
+        <div class="container fade-in">
+          <span class="tag" style="color: #a0d4c8; border-color: #a0d4c8"
+            >Contato</span
+          >
+          <h2>Pronto para proteger<br />seu negócio?</h2>
+          <p>Agende uma conversa sem compromisso. Vamos entender o seu caso.</p>
+          <div
+            style="
+              display: flex;
+              gap: 0.85rem;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a
+              href="https://www.instagram.com/danierufbm"
+              class="btn btn-white"
+              target="_blank"
+              >Instagram</a
+            >
+            <a
+              href="https://www.linkedin.com/in/daniel-filipe-brito-108b40218?"
+              class="btn btn-secondary"
+              style="color: #ffffff; border-color: rgba(255, 255, 255, 0.4)"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
 
-    <a
-      href="https://wa.me/5562995669803"
-      class="whatsapp-float"
-      target="_blank"
-      aria-label="Fale pelo WhatsApp"
-    >
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-        />
-      </svg>
-    </a>
+      <footer>
+        <p>© 2026 Dr. Daniel Filipe — Todos os direitos reservados</p>
+        <p style="margin-top: 0.4rem">
+          Desenvolvido por Matheus Felipe —
+          <a href="#">Todos os Direitos Reservados</a>
+        </p>
+      </footer>
 
-    <script>
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenu = document.getElementById("mobileMenu");
-      hamburger.addEventListener("click", function () {
-        hamburger.classList.toggle("open");
-        mobileMenu.classList.toggle("open");
-      });
-      function fecharMenu() {
-        hamburger.classList.remove("open");
-        mobileMenu.classList.remove("open");
-      }
+      <a
+        href="https://wa.me/5562995669803"
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Fale pelo WhatsApp"
+      >
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+          />
+        </svg>
+      </a>
 
-      const track = document.getElementById("carouselTrack");
-      const btnAnterior = document.getElementById("btnAnterior");
-      const btnProximo = document.getElementById("btnProximo");
-      const dotsContainer = document.getElementById("carouselDots");
-      const totalCards = track.children.length;
-      let cardAtual = 0;
-      for (let i = 0; i < totalCards; i++) {
-        const dot = document.createElement("div");
-        dot.classList.add("dot");
-        if (i === 0) dot.classList.add("active");
-        dot.addEventListener("click", () => irParaCard(i));
-        dotsContainer.appendChild(dot);
-      }
-      function irParaCard(indice) {
-        cardAtual = indice;
-        track.style.transform = `translateX(-${cardAtual * 100}%)`;
-        document.querySelectorAll(".dot").forEach((d, i) => {
-          d.classList.toggle("active", i === cardAtual);
+      <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("open");
+          mobileMenu.classList.toggle("open");
         });
-      }
-      btnProximo.addEventListener("click", function () {
-        irParaCard((cardAtual + 1) % totalCards);
-      });
-      btnAnterior.addEventListener("click", function () {
-        irParaCard((cardAtual - 1 + totalCards) % totalCards);
-      });
-      setInterval(() => irParaCard((cardAtual + 1) % totalCards), 5000);
+        function fecharMenu() {
+          hamburger.classList.remove("open");
+          mobileMenu.classList.remove("open");
+        }
 
-      const observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);
-            }
+        const track = document.getElementById("carouselTrack");
+        const btnAnterior = document.getElementById("btnAnterior");
+        const btnProximo = document.getElementById("btnProximo");
+        const dotsContainer = document.getElementById("carouselDots");
+        const totalCards = track.children.length;
+        let cardAtual = 0;
+        for (let i = 0; i < totalCards; i++) {
+          const dot = document.createElement("div");
+          dot.classList.add("dot");
+          if (i === 0) dot.classList.add("active");
+          dot.addEventListener("click", () => irParaCard(i));
+          dotsContainer.appendChild(dot);
+        }
+        function irParaCard(indice) {
+          cardAtual = indice;
+          track.style.transform = `translateX(-${cardAtual * 100}%)`;
+          document.querySelectorAll(".dot").forEach((d, i) => {
+            d.classList.toggle("active", i === cardAtual);
           });
-        },
-        { threshold: 0.15 },
-      );
-      document.querySelectorAll(".fade-in").forEach(function (el) {
-        observer.observe(el);
-      });
-    </script>
-  </body>
+        }
+        btnProximo.addEventListener("click", function () {
+          irParaCard((cardAtual + 1) % totalCards);
+        });
+        btnAnterior.addEventListener("click", function () {
+          irParaCard((cardAtual - 1 + totalCards) % totalCards);
+        });
+        setInterval(() => irParaCard((cardAtual + 1) % totalCards), 5000);
+
+        const observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15 },
+        );
+        document.querySelectorAll(".fade-in").forEach(function (el) {
+          observer.observe(el);
+        });
+      </script>
+    </body>
+  </main>
 </html>
