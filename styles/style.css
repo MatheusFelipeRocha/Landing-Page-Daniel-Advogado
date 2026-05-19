@@ -291,7 +291,7 @@ h3 {
 }
 
 .sobre {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: #fff;
 }
 .sobre-grid {
@@ -303,6 +303,14 @@ h3 {
 @media (min-width: 640px) {
   .sobre-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 640px) {
+  .sobre-foto {
+    aspect-ratio: unset;
+    height: 100%;
+    min-height: 480px;
   }
 }
 .sobre-foto {
